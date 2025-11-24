@@ -1,9 +1,9 @@
 <?php
 // Database configuration for InfinityFree hosting
-define('DB_HOST', 'sql301.infinityfree.com');
-define('DB_USER', 'if0_40072854');
-define('DB_PASS', 'YmbnpBZfqn');
-define('DB_NAME', 'if0_40072854_db_growa');
+define('DB_HOST', 'host');
+define('DB_USER', 'user');
+define('DB_PASS', 'pass');
+define('DB_NAME', 'sql_name');
 
 // Create database connection
 function getDBConnection() {
@@ -34,4 +34,5 @@ if (session_status() === PHP_SESSION_NONE) {
 header("X-Content-Type-Options: nosniff");
 header("X-Frame-Options: DENY");
 header("X-XSS-Protection: 1; mode=block");
+
 ?>
